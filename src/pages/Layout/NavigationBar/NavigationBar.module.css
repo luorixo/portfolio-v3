@@ -1,0 +1,8 @@
+.navigationBar__outer {
+  width: calc(100vw - 2*var(--mantine-spacing-md));
+  height: calc(100vh - 2*var(--mantine-spacing-md));
+  position: fixed;
+  margin: var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-md);
+  border: 0.1rem solid var(--mantine-color-greenGrey-1);
+}

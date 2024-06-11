@@ -1,4 +1,4 @@
-# Mantine Vite template
+## Portfolio v3
 
 This portfolio was built with:
 - [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
@@ -9,13 +9,13 @@ This portfolio was built with:
 
 ### scripts
 
-#### Build and dev scripts
+#### Development and build
 
 - `dev` – start development server
 - `build` – build production version of the app
 - `preview` – locally preview production build
 
-#### Testing scripts
+#### Testing
 
 - `typecheck` – checks TypeScript types
 - `lint` – runs ESLint
@@ -24,7 +24,7 @@ This portfolio was built with:
 - `vitest:watch` – starts vitest watch
 - `test` – runs `vitest`, `prettier:check`, `lint` and `typecheck` scripts
 
-#### Other scripts
+#### Other
 
 - `storybook` – starts storybook dev server
 - `storybook:build` – build production storybook bundle to `storybook-static`

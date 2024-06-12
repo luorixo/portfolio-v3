@@ -1,4 +1,4 @@
-import { createTheme } from '@mantine/core';
+import { createTheme, virtualColor } from '@mantine/core';
 import { greenGrey, dark, pink, lightGreen } from './colors';
 
 export const theme = createTheme({
@@ -7,5 +7,15 @@ export const theme = createTheme({
     dark,
     pink,
     lightGreen,
+    primary: virtualColor({
+      name: 'primary',
+      dark: 'pink',
+      light: 'lightGreen',
+    }),
+    other: virtualColor({
+      name: 'text',
+      dark: 'greenGrey',
+      light: 'dark',
+    }),
   }
 });

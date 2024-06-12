@@ -4,6 +4,17 @@ import { ColorSchemeToggle } from '../../components/ColorSchemeToggle/ColorSchem
 export function MainPage() {
   return (
     <>
+      <h1>111</h1>
+      <Welcome />
+      <Welcome />
+      <Welcome />
+      <Welcome />
+      <Welcome />
+      <Welcome />
+      <Welcome />
+      <Welcome />
+      <Welcome />
+      <Welcome />
       <Welcome />
       <ColorSchemeToggle />
     </>

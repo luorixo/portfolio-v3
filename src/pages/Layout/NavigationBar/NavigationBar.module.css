@@ -1,8 +1,57 @@
 .navigationBar__outer {
-  width: calc(100vw - 2*var(--mantine-spacing-md));
-  height: calc(100vh - 2*var(--mantine-spacing-md));
+  width: calc(100vw - 2 * var(--mantine-spacing-md));
+  height: calc(100vh - 2 * var(--mantine-spacing-md));
   position: fixed;
-  margin: var(--mantine-spacing-md);
   border-radius: var(--mantine-radius-md);
-  border: 0.1rem solid var(--mantine-color-greenGrey-1);
+  border: 0.075rem solid var(--mantine-color-greenGrey-3);
+  margin: var(--mantine-spacing-md);
+  z-index: -1;
+}
+
+.navigationBar__left {
+  width: calc(2 * var(--mantine-spacing-xl));
+  height: calc(100vh - 2 * var(--mantine-spacing-md));
+  position: fixed;
+  border-right: 0.075rem solid var(--mantine-color-greenGrey-3);
+  margin: var(--mantine-spacing-md) 0 0 var(--mantine-spacing-md);
+  z-index: 100;
+
+}
+
+.navigationBar__top {
+  height: calc(2 * var(--mantine-spacing-xl));
+  width: 20rem;
+  position: fixed;
+  border-radius: 0 0 var(--mantine-radius-md) var(--mantine-radius-md);
+  border: 0.075rem solid var(--mantine-color-greenGrey-3);
+  margin-left: calc(4 * var(--mantine-spacing-xl) + var(--mantine-spacing-md));
+  margin-top: var(--mantine-spacing-md);
+  z-index: 100;
+  /* background-color: var(--mantine-color-primary-1); */
+  backdrop-filter: blur(0.75rem);
+}
+
+.inverseElement {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.inverseElement__top {
+  height: var(--mantine-spacing-md);
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+}
+
+.inverseElement__bottom {
+  height: var(--mantine-spacing-md);
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
 }

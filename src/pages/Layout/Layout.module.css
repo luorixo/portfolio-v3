@@ -1,0 +1,5 @@
+.layout__contentWrapper {
+  padding-left: calc(4 * var(--mantine-spacing-xl) + var(--mantine-spacing-md));
+  padding-top: calc(3.5 * var(--mantine-spacing-xl));
+  padding-bottom: var(--mantine-spacing-md);
+}

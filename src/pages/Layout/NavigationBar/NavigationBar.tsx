@@ -1,11 +1,14 @@
 import classes from './NavigationBar.module.css';
-import { Group, Stack } from '@mantine/core';
+import { Flex, Group, Stack } from '@mantine/core';
 import NavLinkButton from '@/components/NavLinkButton/NavLinkButton';
 import NavButton from '@/components/NavButton/NavButton';
 import { IconSun } from '@tabler/icons-react';
 import ScrollProgressBar from '@/components/ScrollProgressBar/ScrollProgressBar';
 import MenuButton from '@/components/NavButton/MenuButton/MenuButton';
 import ColorSchemeToggleButton from '@/components/NavButton/ColorSchemeToggleButton/ColorSchemeToggleButton';
+import SocialMediaButton from '@/components/SocialMediaButton/SocialMediaButton';
+import LinkedInButton from '@/components/SocialMediaButton/LinkedInButton/LinkedInButton';
+import GitHubButton from '@/components/SocialMediaButton/GitHubButton/GitHubButton';
 
 const links = [
   { target: '/home', label: 'HOME', active: true },
@@ -22,9 +25,19 @@ const NavigationBar = () => {
       <div className={classes.navigationBar__outer} />
 
       <nav className={classes.navigationBar__left}>
-        <Stack className={classes.navigationBar__left__stack} gap={0}>
+        <Stack className={classes.fullheight} gap={0}>
           <MenuButton />
-          <ScrollProgressBar />
+          <div className={classes.fullheight}>
+            <ScrollProgressBar />
+            <Stack
+              align="center"
+              justify="center"
+              className={classes.navigationBar__left__socialMediaIcons}
+            >
+              <LinkedInButton />
+              <GitHubButton />
+            </Stack>
+          </div>
           <ColorSchemeToggleButton />
         </Stack>
       </nav>

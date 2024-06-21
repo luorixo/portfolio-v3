@@ -3,7 +3,7 @@ import NavButton from '../NavButton';
 
 const MenuButton = () => {
   return (
-    <NavButton borderTopLeft>
+    <NavButton borderTopLeft onClick={() => {}}>
       <Logo />
     </NavButton>
   );

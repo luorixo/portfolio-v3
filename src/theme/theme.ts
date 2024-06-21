@@ -23,6 +23,9 @@ export const theme = createTheme({
     xs: '0.4rem',
     lg: '1.3rem',
   },
+  radius: {
+    md: '0.65rem',
+  }
 });
 
 // FIGMA COLOURS

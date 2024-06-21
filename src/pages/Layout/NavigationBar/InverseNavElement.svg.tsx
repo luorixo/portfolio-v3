@@ -11,8 +11,8 @@ const InverseNavElement = () => {
             y="var(--mantine-spacing-xs)"
             width="calc(100vw - 2 * var(--mantine-spacing-xs))"
             height="calc(100vh - 2 * var(--mantine-spacing-xs))"
-            rx="var(--mantine-radius-sm)"
-            ry="var(--mantine-radius-sm)"
+            rx="var(--mantine-radius-md)"
+            ry="var(--mantine-radius-md)"
             fill="black"
           />
         </mask>

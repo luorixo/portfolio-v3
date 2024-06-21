@@ -3,6 +3,14 @@
     height: calc(2 * var(--mantine-spacing-xl));
     border: 0.08rem solid var(--mantine-color-greenGrey-3);
     background-color: var(--mantine-color-dark-9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navButton__wrapper > * {
+    max-width: 75%;
+    max-height: 75%;
 }
 
 .navButton__wrapper:hover {

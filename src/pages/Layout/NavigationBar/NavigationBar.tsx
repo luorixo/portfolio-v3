@@ -2,7 +2,7 @@ import classes from './NavigationBar.module.css';
 import { Group } from '@mantine/core';
 import NavLinkButton from '@/components/NavLinkButton/NavLinkButton';
 import NavButton from '@/components/NavButton/NavButton';
-import InverseNavElement from './InverseNavElement.svg';
+import Logo from '@/assets/Logo';
 
 const links = [
   { target: '/home', label: 'HOME', active: true },
@@ -19,7 +19,9 @@ const NavigationBar = () => {
       <div className={classes.navigationBar__outer} />
 
       <nav className={classes.navigationBar__left}>
-        <NavButton borderTopLeft />
+        <NavButton borderTopLeft>
+          <Logo />
+        </NavButton>
       </nav>
       <nav className={classes.navigationBar__top}>
         <Group gap="lg" justify="center">

@@ -8,6 +8,7 @@ interface NavButtonProps {
   borderBottomLeft?: boolean;
   borderBottomRight?: boolean;
   onClick?: () => void;
+  children?: React.ReactNode;
 }
 
 const NavButton = ({
@@ -15,7 +16,8 @@ const NavButton = ({
   borderTopRight,
   borderBottomLeft,
   borderBottomRight,
-  onClick
+  onClick,
+  children
 }: NavButtonProps) => {
   const borderRadiusClasses = classNames({
     [classes.borderTopLeft]: borderTopLeft,
@@ -26,7 +28,9 @@ const NavButton = ({
 
   return (
     <UnstyledButton>
-      <div className={`${classes.navButton__wrapper} ${borderRadiusClasses}`}>image</div>
+      <div className={`${classes.navButton__wrapper} ${borderRadiusClasses}`}>
+        {children}
+      </div>
     </UnstyledButton>
   );
 };

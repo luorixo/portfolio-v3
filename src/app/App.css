@@ -7,3 +7,11 @@
 :root[data-mantine-color-scheme='dark'] {
   --mantine-color-body: #282827 !important;
 }
+
+/* global transitions */
+* {
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+}

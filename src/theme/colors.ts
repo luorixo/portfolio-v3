@@ -1,4 +1,4 @@
-import { MantineColorsTuple } from "@mantine/core";
+import { MantineColorsTuple, rgba } from "@mantine/core";
 
 export const greenGrey: MantineColorsTuple = [ // #3 for original color
   '#eef8ee',
@@ -15,7 +15,20 @@ export const greenGrey: MantineColorsTuple = [ // #3 for original color
 
 export const dark: MantineColorsTuple = [ // #9 for original color
   '#f5f5f5',
-  '#e7e7e7',
+  '#333333',
+  '#cdcdcd',
+  '#b2b2b2',
+  '#9a9a9a',
+  '#8b8b8b',
+  '#848484',
+  '#717171',
+  '#656565',
+  rgba('#333333', 0.15)
+];
+
+export const light: MantineColorsTuple = [ // #9 for original color
+  '#f5f5f5',
+  '#ffffff',
   '#cdcdcd',
   '#b2b2b2',
   '#9a9a9a',
@@ -27,8 +40,8 @@ export const dark: MantineColorsTuple = [ // #9 for original color
 ];
 
 export const pink: MantineColorsTuple = [ // #5 for original color
-  '#ffeaf5',
-  '#fdd4e4',
+  '#fcecf2',
+  '#ee9dba',
   '#f3a9c3',
   '#ea7aa2',
   '#e25386',

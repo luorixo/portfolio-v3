@@ -7,12 +7,12 @@ const InverseNavElement = () => {
         <mask id="cutoutMask">
           <rect width="100vw" height="100vh" fill="white" />
           <rect
-            x="var(--mantine-spacing-md)"
-            y="var(--mantine-spacing-md)"
-            width="calc(100vw - 2 * var(--mantine-spacing-md))"
-            height="calc(100vh - 2 * var(--mantine-spacing-md))"
-            rx="var(--mantine-radius-md)"
-            ry="var(--mantine-radius-md)"
+            x="var(--mantine-spacing-xs)"
+            y="var(--mantine-spacing-xs)"
+            width="calc(100vw - 2 * var(--mantine-spacing-xs))"
+            height="calc(100vh - 2 * var(--mantine-spacing-xs))"
+            rx="var(--mantine-radius-sm)"
+            ry="var(--mantine-radius-sm)"
             fill="black"
           />
         </mask>

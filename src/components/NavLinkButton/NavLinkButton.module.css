@@ -1,0 +1,25 @@
+.navigationBar__button {
+  border-radius: var(--mantine-radius-md);
+  border-radius: rem(10px);
+  border: 0.08rem solid transparent;
+  padding: 0.24rem 0.9rem 0 0.9rem;
+  background-color: transparent;
+  color: var(--mantine-color-text-1);
+  font-weight: 500;
+  font-size: var(--mantine-font-size-xs);
+
+  &[data-active] {
+    &,
+    &:hover {
+      background-color: var(--mantine-color-pink-1);
+      color: var(--mantine-color-text-1);
+    }
+  }
+}
+
+.navigationBar__button:hover {
+  /* background-color: var(--mantine-color-pink-2); */
+  color: var(--mantine-color-text-1);
+  border: 0.08rem solid var(--mantine-color-greenGrey-7);
+  background-color: transparent;
+}

@@ -1,0 +1,26 @@
+.navButton__wrapper {
+    width: calc(2 * var(--mantine-spacing-xl));
+    height: calc(2 * var(--mantine-spacing-xl));
+    border: 0.08rem solid var(--mantine-color-greenGrey-3);
+    background-color: var(--mantine-color-dark-9);
+}
+
+.navButton__wrapper:hover {
+    border: 0.08rem solid var(--mantine-color-greenGrey-7);
+}
+
+.borderTopLeft {
+    border-top-left-radius: var(--mantine-radius-md);
+}
+
+.borderTopRight {
+    border-top-right-radius: var(--mantine-radius-md);
+}
+
+.borderBottomLeft {
+    border-bottom-left-radius: var(--mantine-radius-md);
+}
+
+.borderBottomRight {
+    border-bottom-right-radius: var(--mantine-radius-md);
+}

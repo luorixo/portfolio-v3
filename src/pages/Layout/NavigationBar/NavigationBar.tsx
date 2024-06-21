@@ -1,8 +1,11 @@
 import classes from './NavigationBar.module.css';
-import { Group } from '@mantine/core';
+import { Group, Stack } from '@mantine/core';
 import NavLinkButton from '@/components/NavLinkButton/NavLinkButton';
 import NavButton from '@/components/NavButton/NavButton';
-import Logo from '@/assets/Logo';
+import { IconSun } from '@tabler/icons-react';
+import ScrollProgressBar from '@/components/ScrollProgressBar/ScrollProgressBar';
+import MenuButton from '@/components/NavButton/MenuButton/MenuButton';
+import ColorSchemeToggleButton from '@/components/NavButton/ColorSchemeToggleButton/ColorSchemeToggleButton';
 
 const links = [
   { target: '/home', label: 'HOME', active: true },
@@ -19,9 +22,11 @@ const NavigationBar = () => {
       <div className={classes.navigationBar__outer} />
 
       <nav className={classes.navigationBar__left}>
-        <NavButton borderTopLeft>
-          <Logo />
-        </NavButton>
+        <Stack className={classes.navigationBar__left__stack} gap={0}>
+          <MenuButton />
+          <ScrollProgressBar />
+          <ColorSchemeToggleButton />
+        </Stack>
       </nav>
       <nav className={classes.navigationBar__top}>
         <Group gap="lg" justify="center">

@@ -44,6 +44,10 @@
   z-index: 100;
 }
 
+.navigationBar__left__stack {
+  height: 100%;
+}
+
 .navigationBar__top {
   height: calc(2 * var(--mantine-spacing-xl));
   position: fixed;

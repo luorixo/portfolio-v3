@@ -1,0 +1,6 @@
+.ScrollProgressBar {
+  width: calc(2 * var(--mantine-spacing-xl));
+  height: 100%;
+  background-color: var(--mantine-color-primary-0);
+  transform-origin: bottom;
+}

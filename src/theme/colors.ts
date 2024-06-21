@@ -40,7 +40,7 @@ export const light: MantineColorsTuple = [ // #9 for original color
 ];
 
 export const pink: MantineColorsTuple = [ // #5 for original color
-  '#fcecf2',
+  rgba('#DE3C76', 0.1),
   '#ee9dba',
   '#f3a9c3',
   '#ea7aa2',
@@ -53,7 +53,7 @@ export const pink: MantineColorsTuple = [ // #5 for original color
 ];
 
 export const lightGreen: MantineColorsTuple = [ // #1 for original color
-  '#f1f8ef',
+rgba('#DE3C76', 0.15),
   '#dae4d7',
   '#c9d6c6',
   '#acc0a6',
